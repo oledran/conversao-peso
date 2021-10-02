@@ -33,6 +33,7 @@ jobs:
           file: ./conversao-peso/ConversaoPeso.Web/Dockerfile
           push: true
           tags: |
+            dellodello/conversao-peso:v1
             dellodello/conversao-peso:latest
             dellodello/conversao-peso:${{github.run_number}}
             

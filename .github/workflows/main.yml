@@ -29,8 +29,8 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v2.6.1
         with:
-          context: ./conversao-peso/ConversaoPeso.Web
-          file: ./conversao-peso/ConversaoPeso.Web/Dockerfile
+          context: ./conversao-peso/src
+          file: ./conversao-peso/src/Dockerfile
           push: true
           tags: |
             dellodello/conversao-peso:v1

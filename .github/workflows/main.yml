@@ -52,10 +52,10 @@ jobs:
         uses: Azure/k8s-deploy@v1
         with: 
           manifests: |
-            ./deployment.yaml
+            deployment.yaml
       - name: Deploy Web
         uses: Azure/k8s-deploy@v1
         with: 
           manifests: |
-            ./deployment.yaml
+            deployment.yaml
           images: dellodello/conversao-peso:${{github.run_number}}
